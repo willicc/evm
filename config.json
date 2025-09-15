@@ -1,0 +1,26 @@
+{
+    "eth": {
+        "rpc": "https://mainnet.infura.io/v3/YOUR_PROJECT_ID",
+        "chain_id": 1
+    },
+    "base": {
+        "rpc": "https://mainnet.base.org",
+        "chain_id": 8453
+    },
+    "op": {
+        "rpc": "https://mainnet.optimism.io",
+        "chain_id": 10
+    },
+    "bsc": {
+        "rpc": "https://bsc-dataseed.binance.org/",
+        "chain_id": 56
+    },
+    "arbitrum": {
+        "rpc": "https://arb1.arbitrum.io/rpc",
+        "chain_id": 42161
+    },
+    "monadtest": {
+        "rpc": "https://testnet-rpc.monad.xyz",
+        "chain_id": 10143
+    }
+}
