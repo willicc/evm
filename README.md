@@ -1,4 +1,7 @@
 # evmEVM通用交互程序
+说明：适用于大部分EVM网络批量刷tx。可以自行在cnofig.json添加不同链的rpc和链id。
+
+比如，在monad上开发一个faucet合约，然后通过程序批量领取。或者任意其他合约的交互，需要取得合约的地址和data。
 
 ## 1 安装支持环境
 安装 Python，tkinter（GUI 库）， web3（区块链交互库）
