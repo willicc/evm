@@ -21,4 +21,5 @@ config.json如果不包括需要的网络，请自行在config.json中添加所�
 在弹出的窗口中设置参数，选择链和交互目标的合约地址。发送的data。如下图是刷monad运行
     
 ## 4 运行截图如下
-<img width="1200" height="1056" alt="image" src="https://github.com/user-attachments/assets/1323cca0-7309-41b5-8280-d92ff93ce36f" />
+<img width="1200" height="1056" alt="image" src="https://github.com/user-attachments/assets/b9401950-b9a4-4625-bdb4-215e767979e6" />
+
