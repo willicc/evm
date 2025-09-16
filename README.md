@@ -1,31 +1,41 @@
-# evmEVM通用交互程序
-说明：适用于大部分EVM网络批量刷tx。可以自行在cnofig.json添加不同链的rpc和链id。
+# EVM General Interaction Program
 
-比如，在monad上开发一个faucet合约，然后通过程序批量领取。或者任意其他合约的交互，需要取得合约的地址和data。
+Description: Suitable for batch transactions on most EVM networks. You can add RPC endpoints and chain IDs for different chains in `config.json`.
 
-## 免责声明：本程序为明文代码，运行前请先审核代码安全性。确定使用后，运行时产生任何损失均与本代码无关
+For example, develop a faucet contract on Monad and then use this program to batch-claim it. Or interact with any other contract — you only need the contract address and the `data` payload.
 
-## 1 安装支持环境
-安装 Python，tkinter（GUI 库）， web3（区块链交互库）
+## Disclaimer
 
-    sudo apt update && sudo apt install python3 python3-pip
-    sudo apt install python3-tk
-    pip3 install web3
+This program is provided as plain-text source code. Please review the code for safety before running. Any losses or damages that occur while using this program are not the responsibility of this code.
 
-## 2 准备私匙文件和配置文件
-程序读取私匙文件address.txt内容，一行一个。类似如下：
+## 1 — Install required environment
 
+Install Python, `tkinter` (GUI library), and `web3` (blockchain interaction library):
+
+```bash
+sudo apt update && sudo apt install python3 python3-pip
+sudo apt install python3-tk
+pip3 install web3
+```
+
+## 2 — Prepare private key file and configuration
+
+The program reads private keys from `address.txt`, one per line. Example:
+
+```
 0x123456...
+```
 
-config.json如果不包括需要的网络，请自行在config.json中添加所需网络。
+If `config.json` does not include the network you need, add the required network entries (RPC and chainId) to `config.json` yourself.
 
+## 3 — Run the script
 
-## 3 运行脚本
-    python3 evm.py
+```bash
+python3 evm.py
+```
 
-在弹出的窗口中设置参数，选择链和交互目标的合约地址。发送的data。如下图是刷monad运行
-    
-## 4 运行截图如下
+In the popup window set the parameters, choose the chain and the target contract address for interaction, and provide the `data` to send. The example below shows running batch claims on Monad.
+
+## 4 — Screenshot of running
+
 <img width="1200" height="1056" alt="image" src="https://github.com/user-attachments/assets/b3c14b95-52c1-47e0-ad84-ee0bc1b78ad6" />
-
-
